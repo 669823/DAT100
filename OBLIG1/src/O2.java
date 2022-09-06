@@ -4,10 +4,12 @@ import static javax.swing.JOptionPane.showInputDialog;
 public class O2 {
 
 	public static void main(String[] args) {
-
+		//for loop for å begrense + innskriving
 		for (int i = 1; i <= 10; i++) {
 			String poengsumTxt = showInputDialog("Hvor mange poeng fikk du?");
 			int poeng= parseInt(poengsumTxt);
+			
+			//utregning og grense for antall poeng
 			if (poeng> 100 || poeng< 0) {
 				i--;
 				System.out.println("Skriv inn en gyldig verdi");

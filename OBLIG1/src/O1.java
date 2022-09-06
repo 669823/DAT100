@@ -7,9 +7,10 @@ public class O1 {
 
 
 		public static void main(String[] args) {
+		//innskriving data	
 		String inntektTxt = showInputDialog("Hvor mye tjente du?");
 		double lønn = parseDouble(inntektTxt);
-
+		//utregning + print
 		if (lønn <= 190349) {
 			showMessageDialog(null, "Du skylder: kr 0 i skatt");
 		} else if (lønn <= 267899) {
